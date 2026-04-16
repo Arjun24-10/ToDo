@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router-dom';
-import { Chrome, Monitor, Bell, BellOff, RefreshCw, Unlink, Shield } from 'lucide-react';
+import { Globe, Monitor, Bell, BellOff, RefreshCw, Unlink, Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 import api from '../lib/api';
@@ -123,7 +123,7 @@ export default function Settings() {
           <div className="flex items-center justify-between p-4 rounded-xl border border-white/5" style={{ background: 'rgba(255,255,255,0.03)' }}>
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: 'rgba(66,133,244,0.15)' }}>
-                <Chrome size={18} className="text-blue-400" />
+                <Globe size={18} className="text-blue-400" />
               </div>
               <div>
                 <p className="text-sm font-medium text-white">Google Calendar</p>
